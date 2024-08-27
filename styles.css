@@ -1,1 +1,65 @@
 /*  your css code here. If applicable */
+body {
+  font-family: sans-serif;
+  display: flex;https://www.svgrepo.com/show/345221/three-dots.svg
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.progress-bar {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 6px;
+  width: 0%;
+  background-color: #3498db;
+  z-index: -1;
+  transition: width 0.4s ease;
+  transform: tranbslateY(-50%);
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+  border: 3px solid transparent;
+}
+
+.circle.active {
+  background-color: white;
+  border: 3px solid #3498db;
+  color: grey;
+}
+
+.btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+  font-family: "Calibri";
+}
+
+.btn:disabled {
+  background-color: #63aff7;
+  cursor: not-allowed;
+}
